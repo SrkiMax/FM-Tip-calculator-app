@@ -20,6 +20,9 @@ resetBtn.disabled = true;
 
 
 const checkInputs = () => {
+
+    const bill = parseFloat(billInput.value);
+    const numPeople = parseInt(numPeopleInput.value);
     // Enable the reset button if bill > 0, numPeople > 0, and a tip percentage is selected
     if (bill > 0 && (selectedTipPercentage > 0 || customInput.value > 0) && numPeople > 0) {
         resetBtn.disabled = false;
@@ -86,6 +89,8 @@ percentButtons.forEach((button) => {
         // Remove the active class from all buttons
         resetPercentButtons();
 
+        resetCustomInput();
+
         // Add the active class to the clicked button
         button.classList.add("clicked");
 
@@ -139,10 +144,15 @@ const calcTipPerPerson = () => {
 customInput.addEventListener("input", () => {
 
     selectedTipPercentage = customInput.value > 0 ? parseFloat(customInput.value) / 100 : 0;
+    resetPercentButtons();
     errorMessage();
     calcTipPerPerson();
     checkInputs();
-})
+});
+
+const resetCustomInput = () => {
+    customInput.value = "";
+};
 
 billInput.addEventListener("input", () => {
     checkInputs();
@@ -155,5 +165,6 @@ numPeopleInput.addEventListener("input", () => {
     calcTipPerPerson();
     errorMessage();
 });
+
 
 
