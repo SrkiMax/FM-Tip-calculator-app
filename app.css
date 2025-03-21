@@ -217,6 +217,12 @@ input[type=number] {
     justify-content: space-between;
 }
 
+
+
+.total-person {
+    margin-top: -1rem;
+}
+
 .p1 {
     grid-area: p1;
     margin-bottom: 0;
@@ -226,7 +232,7 @@ input[type=number] {
 
 .p2 {
     grid-area: p2;
-    margin-top: -2.5rem;
+    margin-top: -3.5rem;
     color: var(--Grayish-cyan);
     font-size: 13px;
 }
