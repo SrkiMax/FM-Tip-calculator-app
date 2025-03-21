@@ -220,7 +220,7 @@ input[type=number] {
 
 
 .total-person {
-    margin-top: -1rem;
+    margin-top: -2rem;
 }
 
 .p1 {
@@ -265,7 +265,7 @@ input[type=number] {
 }
 
 .btn-reset:disabled {
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 
