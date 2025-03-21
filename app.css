@@ -70,7 +70,13 @@ body {
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin-right: 1rem;
+    //margin-right: 1rem;
+}
+
+/* Remove arrows in Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    padding-right: 1rem;
 }
 
 
@@ -155,12 +161,12 @@ input[type="number"]::-webkit-inner-spin-button {
 #custom {
     text-align: right;
     background-color: var(--Very-light-grayish-cyan);
-    padding: 0.4rem;
     border-radius: 0.45rem;
     border: none;
     font-size: 24px;
     font-weight: 700;
     padding: 0;
+    padding-right: 1rem;
     width: 100%;
 }
 
