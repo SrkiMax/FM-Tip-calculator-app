@@ -16,11 +16,10 @@
     --Light-grayish-cyan: #9FE8DF;
     --Very-light-grayish-cyan: #f4fafa;
     --Background: #C5E4E7;
+    --Input-color: #00474B;
     --White: #ffffff;
     --Error: #E17457;
-
 }
-
 
 body {
     font-family: "Space Mono", monospace;
@@ -34,9 +33,7 @@ body {
     justify-content: center;
     margin-top: 10.5rem;
     margin-bottom: 5rem;
-
 }
-
 
 .container {
     background-color: var(--White);
@@ -46,13 +43,11 @@ body {
     max-width: 920px;
     padding: 2rem;
     border-radius: 1.25rem;
-
 }
 
 .left {
     padding: 1rem;
 }
-
 
 .bill {
     display: flex;
@@ -89,7 +84,7 @@ input[type=number] {
     border: none;
     font-size: 24px;
     font-weight: 700;
-    color: var(--Very-dark-cyan);
+    color: var(--Input-color);
 }
 
 #bill-input:focus {
@@ -111,9 +106,6 @@ input[type=number] {
 }
 
 
-
-
-
 .select-tip {
     margin-top: 3rem;
 }
@@ -129,7 +121,6 @@ input[type=number] {
     grid-template-rows: 1fr 1fr;
     gap: 10px;
     margin-bottom: 2rem;
-
 }
 
 .radio-button {
@@ -152,17 +143,15 @@ input[type=number] {
     cursor: pointer;
 }
 
-
-
 .clicked {
     background-color: var(--Strong-cyan);
     color: var(--Very-dark-cyan);
 }
 
-
 #custom {
     text-align: right;
     background-color: var(--Very-light-grayish-cyan);
+    color: var(--Input-color);
     border-radius: 0.45rem;
     border: none;
     font-size: 24px;
@@ -179,7 +168,6 @@ input[type=number] {
 #custom:focus {
     outline: none;
     border: 2px solid var(--Strong-cyan);
-
 }
 
 
@@ -188,7 +176,6 @@ input[type=number] {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
 }
 
 .error-text {
@@ -199,7 +186,6 @@ input[type=number] {
 .show-error {
     display: block;
 }
-
 
 .peopleNum-input {
     height: 3rem;
@@ -220,7 +206,6 @@ input[type=number] {
     padding: 2rem;
     border-radius: 1rem;
     display: grid;
-
 }
 
 .total {
@@ -253,7 +238,6 @@ input[type=number] {
     color: var(--Strong-cyan);
     font-size: 48px;
     margin-top: -2rem;
-
 }
 
 .btn-reset {
@@ -268,7 +252,6 @@ input[type=number] {
     width: 100%;
     align-self: flex-end;
     justify-self: center;
-
 }
 
 .btn-reset:focus {
